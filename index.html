@@ -8,18 +8,66 @@
             font-family: "product_sans";
             src: url(product-sans/ProductSansRegular.ttf);
         }
-        .mainHead {
-            text-align: left;
+        @font-face {
+            font-family: "product_sans_bold";
+            src: url(product-sans/ProductSansBold.ttf);
+        }
+
+        .navBar {
+            /*background: aquamarine;*/
+            padding: 0px;
+            margin: 10px;
+            height: 50px;
+        }
+        .navBar a {
             font-family: product_sans;
+            float: right;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            vertical-align: center;
+            border-radius: 25px;
+            background-color: #8c9c6a;
+            text-decoration: none;
+        }
+        .navBar a:hover {
+            background-color: gainsboro;
+            color: black;
+        }
+        .navBar home {
+            font-family: product_sans_bold;
+            font-size: 120%;
+            display: block;
+            text-align: left;
+            float:left;
+            padding: 14px 16px;
         }
         .contentCard {
             border-radius: 20px;
+            background: #8c9c6a;
+            padding: 0px;
+            width: 50%;
+            height: 50%;
+        }
+        #pageCard {
+            border-radius: 20px;
+            background: gainsboro;
+            padding: 10px 20px;
+            height: 100%;
         }
     </style>
 </head>
 <body>
-    <div class="mainHead">
-            <h2>Jesse Marasigan | Photography/Videography</h2>
+    <div class="navBar">
+        <home>Jesse Marasigan</home>
+        <a href="https://forms.gle/yAAdL3pL6L92ddUW9">Book Photoshoot</a>
+    </div>
+
+    <div id="pageCard">
+            <div class="contentCard">
+                <p>Photography Portfolio</p>
+            </div>
     </div>
 </body>
 </html>
