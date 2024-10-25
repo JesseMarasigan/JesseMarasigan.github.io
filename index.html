@@ -13,6 +13,29 @@
             src: url(product-sans/ProductSansBold.ttf);
         }
 
+        body {
+            background-color: white;
+        }
+
+        /*Setting Columns*/
+
+        .leftcolumn {
+            float: left;
+            width: 50%;
+        }
+
+        .rightcolumn {
+            float: left;
+            width: 50%;
+        }
+
+        .subleftcolumn {
+            float:left;
+            width: 50%;
+        }
+
+        /*Navigation Bar*/
+
         .navBar {
             /*background: aquamarine;*/
             padding: 0px;
@@ -35,39 +58,102 @@
             background-color: gainsboro;
             color: black;
         }
-        .navBar home {
+        .navBar a.home {
             font-family: product_sans_bold;
             font-size: 120%;
             display: block;
             text-align: left;
             float:left;
+            color: black;
+            background-color: white;
             padding: 14px 16px;
         }
+
+        /*Content Cards*/
+
         .contentCard {
+            position: relative;
             border-radius: 20px;
             background: #8c9c6a;
-            padding: 0px;
-            width: 50%;
-            height: 50%;
+            /*width: 50%;*/
+            /*height: 50%;*/
+            margin: 15px 15px;
         }
-        #pageCard {
+
+        .linkCard {
+            position: relative;
             border-radius: 20px;
+            background: white;
+            /*width: 50%;*/
+            /*height: 50%;*/
+            margin: 15px 15px;
+        }
+
+        .birdpic {
+            background-image: url(pictures/bird.jpg);
+            background-size: cover;
+        }
+
+        .profilepic {
+            background-image: url(pictures/jesse.jpg);
+            background-size: cover;
+        }
+
+        .profilepic:hover {
+            opacity: 0.5;
+        }
+
+        .pageCard {
+            border-radius: 35px;
             background: gainsboro;
-            padding: 10px 20px;
-            height: 100%;
+            padding: 10px 10px;
+            height: 90%;
+
+            font-family: product_sans_bold;
+            color: white;
+            /*font-size: 300%;*/
+        }
+
+        .cardText {
+            position: absolute;
+            bottom: 10px;
+            left: 15px;
+            font-family: product_sans_bold;
+            color: white;
+            font-size: 300%;
         }
     </style>
 </head>
 <body>
     <div class="navBar">
-        <home>Jesse Marasigan</home>
-        <a href="https://forms.gle/yAAdL3pL6L92ddUW9">Book Photoshoot</a>
+        <a class="home" href="https://jessemarasigan.github.io">Jesse Marasigan | Photography Portfolio</a>
+        <a href="https://forms.gle/yAAdL3pL6L92ddUW9" target="_blank">Book Photoshoot</a>
     </div>
 
-    <div id="pageCard">
-            <div class="contentCard">
-                <p>Photography Portfolio</p>
+    <div class="pageCard">
+        <div class="leftcolumn">
+            <div class="contentCard birdpic" style="height: 50%">
+                <div class="cardText">Gallery</div>
             </div>
+            <div class="leftcolumn">
+                <a href="https://www.instagram.com/marasigan.media/" target="_blank">
+                    <div class="linkCard profilepic" style="height: 43%">
+                        <div class="cardText" style="font-size: 250%">Instagram</div>
+                    </div>
+                </a>
+            </div>
+            <div class="rightcolumn">
+                <div class="contentCard" style="height: 43%">
+                    <div class="cardText" style="font-size: 250%">More</div>
+                </div>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="contentCard" style="height: 96%">
+
+            </div>
+        </div>
     </div>
+
 </body>
 </html>
