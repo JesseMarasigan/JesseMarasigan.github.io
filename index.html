@@ -14,7 +14,7 @@
         }
 
         body {
-            background-color: white;
+            background-color: #faf5e3;
         }
 
         /*Setting Columns*/
@@ -51,11 +51,12 @@
             padding: 14px 16px;
             vertical-align: center;
             border-radius: 25px;
-            background-color: #8c9c6a;
+            /*background-color: #8c9c6a;*/
+            background-color: #57694f;
             text-decoration: none;
         }
         .navBar a:hover {
-            background-color: gainsboro;
+            background-color: #d4d0c1;
             color: black;
         }
         .navBar a.home {
@@ -65,7 +66,7 @@
             text-align: left;
             float:left;
             color: black;
-            background-color: white;
+            background-color: #faf5e3;
             padding: 14px 16px;
         }
 
@@ -74,7 +75,8 @@
         .contentCard {
             position: relative;
             border-radius: 20px;
-            background: #8c9c6a;
+            /*background: #8c9c6a;*/
+            background: #57694f;
             /*width: 50%;*/
             /*height: 50%;*/
             margin: 15px 15px;
@@ -94,18 +96,28 @@
             background-size: cover;
         }
 
+        .bird {
+            background-image: url(pictures/bird-1.jpg);
+            background-size: cover;
+        }
+
+        .youtube {
+            background-image: url(pictures/youtube.png);
+            background-size: cover;
+        }
+
         .profilepic {
             background-image: url(pictures/jesse.jpg);
             background-size: cover;
         }
 
-        .profilepic:hover {
+        .click:hover {
             opacity: 0.5;
         }
 
         .pageCard {
             border-radius: 35px;
-            background: gainsboro;
+            background: #d4d0c1;
             padding: 10px 10px;
             height: 90%;
 
@@ -118,39 +130,99 @@
             position: absolute;
             bottom: 10px;
             left: 15px;
-            font-family: product_sans_bold;
+            font-family: product_sans;
             color: white;
             font-size: 300%;
         }
+
+        .topCardText {
+            position: relative;
+            top: 10px;
+            left: 15px;
+            font-family: product_sans;
+            color: white;
+            font-size: 300%;
+        }
+
+        .cardContent {
+            font-family: product_sans;
+            position: relative;
+            top: 20px;
+            left: 15px;
+            /*background-color: black;*/
+            margin-top: 5px;
+            margin-bottom: 5px;
+            color: gainsboro;
+        }
+
+        .pushleft {
+            left: 50px;
+        }
+
+        .button {
+            position: relative;
+            top: 30px;
+            left: 15px;
+            border-radius: 25px;
+            border-style: solid;
+            border-color: gainsboro;
+            padding: 14px 16px;
+            color: gainsboro;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            border-color: white;
+            background-color: white;
+            padding: 14px 16px;
+            color: #57694f;
+        }
+
     </style>
 </head>
 <body>
     <div class="navBar">
-        <a class="home" href="https://jessemarasigan.github.io">Jesse Marasigan | Photography Portfolio</a>
+        <a class="home" href="https://jessemarasigan.github.io">Jesse Marasigan | Photography</a>
         <a href="https://forms.gle/yAAdL3pL6L92ddUW9" target="_blank">Book Photoshoot</a>
     </div>
 
     <div class="pageCard">
         <div class="leftcolumn">
-            <div class="contentCard birdpic" style="height: 50%">
-                <div class="cardText">Gallery</div>
+            <div class="contentCard" style="height: 50%">
+                <div class="topCardText" style="padding-bottom: 10px">Graduation Photos</div>
+                <a class="button" href="https://forms.gle/cJbztqTJrip7V9Kv6" target="_blank">Book Now</a>
+                <p class="cardContent" style="font-size: 150%; padding-top: 40px; color: white">What's Included:</p>
+                <p class="cardContent pushleft">3 Locations + Tower/Fountain (+$20 per extra location)</p>
+                <p class="cardContent pushleft">45-Minute Limit per Location</p>
+                <p class="cardContent pushleft">3 Outfit Changes</p>
+                <p class="cardContent pushleft">20+ Photos</p>
+                <p class="cardContent pushleft" style="padding-bottom: 20px">2 Rounds of Revisions</p>
+
+
+
+                <p class="cardContent" style="font-size: 150%; color: white">Rates:</p>
+                <p class="cardContent pushleft">Individual: $175</p>
+                <p class="cardContent pushleft">Group: $260 Total for 2, +$70 per Additional Person</p>
+
             </div>
             <div class="leftcolumn">
                 <a href="https://www.instagram.com/marasigan.media/" target="_blank">
-                    <div class="linkCard profilepic" style="height: 43%">
-                        <div class="cardText" style="font-size: 250%">Instagram</div>
+                    <div class="linkCard profilepic click" style="height: 43%">
+                        <div class="cardText" style="font-size: 200%">Instagram</div>
                     </div>
                 </a>
             </div>
             <div class="rightcolumn">
-                <div class="contentCard" style="height: 43%">
-                    <div class="cardText" style="font-size: 250%">More</div>
-                </div>
+                <a href="https://youtu.be/5n5n0iy7EaY?feature=shared" target="_blank">
+                    <div class="linkCard youtube click" style="height: 43%">
+                        <div class="cardText" style="font-size: 200%">Documentary</div>
+                    </div>                   
+                </a>
             </div>
         </div>
         <div class="rightcolumn">
-            <div class="contentCard" style="height: 96%">
-
+            <div class="contentCard bird" style="height: 96%">
+                <div class="cardText">Gallery</div>
             </div>
         </div>
     </div>
