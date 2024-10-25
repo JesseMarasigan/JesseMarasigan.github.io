@@ -2,7 +2,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Photography Portfolio">
+    <meta name="keywords" content="Photography, Graduation, Portfolio">
+    <meta name="author" content="Jesse Marasigan">
+
     <title>Home | Jesse Marasigan</title>
+
     <style>
         @font-face {
             font-family: "product_sans";
@@ -26,11 +31,6 @@
 
         .rightcolumn {
             float: left;
-            width: 50%;
-        }
-
-        .subleftcolumn {
-            float:left;
             width: 50%;
         }
 
@@ -91,11 +91,6 @@
             margin: 15px 15px;
         }
 
-        .birdpic {
-            background-image: url(pictures/bird.jpg);
-            background-size: cover;
-        }
-
         .bird {
             background-image: url(pictures/bird-1.jpg);
             background-size: cover;
@@ -115,15 +110,14 @@
             opacity: 0.5;
         }
 
-        .pageCard {
+        #pageCard {
             border-radius: 35px;
             background: #d4d0c1;
             padding: 10px 10px;
             height: 90%;
 
-            font-family: product_sans_bold;
+            font-family: product_sans;
             color: white;
-            /*font-size: 300%;*/
         }
 
         .cardText {
@@ -159,6 +153,8 @@
             left: 50px;
         }
 
+        /*button*/
+
         .button {
             position: relative;
             top: 30px;
@@ -186,7 +182,7 @@
         <a href="https://forms.gle/yAAdL3pL6L92ddUW9" target="_blank">Book Photoshoot</a>
     </div>
 
-    <div class="pageCard">
+    <div id="pageCard">
         <div class="leftcolumn">
             <div class="contentCard" style="height: 50%">
                 <div class="topCardText" style="padding-bottom: 10px">Graduation Photos</div>
@@ -216,14 +212,12 @@
                 <a href="https://youtu.be/5n5n0iy7EaY?feature=shared" target="_blank">
                     <div class="linkCard youtube click" style="height: 43%">
                         <div class="cardText" style="font-size: 200%">Documentary</div>
-                    </div>                   
+                    </div>
                 </a>
             </div>
         </div>
         <div class="rightcolumn">
-            <div class="contentCard bird" style="height: 96%">
-                <div class="cardText">Gallery</div>
-            </div>
+            <div class="contentCard bird" style="height: 96%"></div>
         </div>
     </div>
 
